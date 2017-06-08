@@ -17,3 +17,6 @@
 /yarn-error.log
 
 .byebug_history
+
+
+config/initializers/01_dev_env_vars.rb
