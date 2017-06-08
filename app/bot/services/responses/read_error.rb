@@ -13,7 +13,7 @@ class ReadError < MessageProcessor
 
   def prepare_response
     return [{
-                text: 'Something has gone wrong..'
+                text: 'Sorry, I do not recognise that command'
             }]
   end
 

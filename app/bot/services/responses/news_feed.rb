@@ -1,7 +1,7 @@
 # MessageProcessor handles an incoming responce and parses to the required responder object
 class NewsFeed < MessageProcessor
 
-  def initialize(message)
+  def initialize(message, user)
     @message = message
   end
 
