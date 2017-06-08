@@ -3,7 +3,7 @@
 
 require "facebook/messenger"
 include Facebook::Messenger
-Facebook::Messenger::Subscriptions.subscribe(access_token: ENV["BOT_ACCESS_TOKEN"])
+Facebook::Messenger::Subscriptions.subscribe(access_token: Rails.application.secrets.bot_access_token)
 Bot.on :message do |message|
   puts "got your message!"
 end
