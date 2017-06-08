@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da3386d-c83a-4d4c-a2b6-15e2077f5d61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/bot.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/services/dispatcher.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/services/fetch_user.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/services/responses/get_started.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/services/message_processor.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/services/responses/message_read_error.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/services/responses/my_music.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/services/responses/news_feed.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/services/postback_processor.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/services/responses/read_error.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bot/send_greeting.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/popbot.iml" afterPath="$PROJECT_DIR$/.idea/popbot.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bot/menu.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bot/bot.rb" afterPath="$PROJECT_DIR$/app/bot/bot.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bot/services/responses/news_feed.rb" afterPath="$PROJECT_DIR$/app/bot/services/responses/news_feed.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bot/services/responses/read_error.rb" afterPath="$PROJECT_DIR$/app/bot/services/responses/read_error.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="popbot.iws" />
@@ -47,8 +38,8 @@
       <file leaf-file-name="bot.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/bot/bot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="613" max-vertical-offset="1110">
-              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,31 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fetch_user.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/bot/services/fetch_user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-              <caret line="17" column="9" selection-start-line="8" selection-start-column="2" selection-end-line="17" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="read_error.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/bot/services/responses/read_error.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -108,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/app/bot/services/responses/message_read_error.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="22" />
+              <caret line="22" column="83" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -118,7 +89,17 @@
         <entry file="file://$PROJECT_DIR$/app/bot/services/responses/news_feed.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="22" />
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/bot/menu.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -129,6 +110,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.2843602" vertical-offset="0" max-vertical-offset="570">
               <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_music.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/bot/services/responses/my_music.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,18 +156,19 @@
         <option value="$PROJECT_DIR$/app/bot/services/response_handler_service.rb" />
         <option value="$PROJECT_DIR$/app/bot/services/message_processor/get_started.rb" />
         <option value="$PROJECT_DIR$/app/bot/send_greeting.rb" />
-        <option value="$PROJECT_DIR$/app/bot/services/responses/news_feed.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170608204646_create_users.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/bot/services/new_user.rb" />
         <option value="$PROJECT_DIR$/app/bot/services/fetch_user.rb" />
         <option value="$PROJECT_DIR$/app/bot/services/dispatcher.rb" />
-        <option value="$PROJECT_DIR$/app/bot/services/responses/read_error.rb" />
         <option value="$PROJECT_DIR$/app/bot/services/responses/message_read_error.rb" />
         <option value="$PROJECT_DIR$/app/bot/services/message_processor.rb" />
-        <option value="$PROJECT_DIR$/app/bot/bot.rb" />
         <option value="$PROJECT_DIR$/app/bot/services/postback_processor.rb" />
         <option value="$PROJECT_DIR$/app/bot/services/responses/get_started.rb" />
+        <option value="$PROJECT_DIR$/app/bot/services/responses/read_error.rb" />
+        <option value="$PROJECT_DIR$/app/bot/bot.rb" />
+        <option value="$PROJECT_DIR$/app/bot/menu.rb" />
+        <option value="$PROJECT_DIR$/app/bot/services/responses/news_feed.rb" />
       </list>
     </option>
   </component>
@@ -356,6 +348,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/bot" />
       <recent name="$PROJECT_DIR$/app/bot/services/responses" />
       <recent name="$PROJECT_DIR$/app/bot/services" />
       <recent name="$PROJECT_DIR$/app/bot/services/message_processor" />
@@ -795,14 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bot/services/responses/my_music.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170608204646_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20979021" vertical-offset="0" max-vertical-offset="715">
@@ -819,10 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bot/services/dispatcher.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -835,10 +820,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/bot/bot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bot/menu.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -846,15 +839,15 @@
     <entry file="file://$PROJECT_DIR$/app/bot/services/responses/read_error.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bot/bot.rb">
+    <entry file="file://$PROJECT_DIR$/app/bot/services/dispatcher.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="613" max-vertical-offset="1110">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -870,7 +863,15 @@
     <entry file="file://$PROJECT_DIR$/app/bot/services/responses/news_feed.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="22" />
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bot/services/responses/my_music.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -878,7 +879,7 @@
     <entry file="file://$PROJECT_DIR$/app/bot/services/responses/message_read_error.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="22" />
+          <caret line="22" column="83" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="83" />
           <folding />
         </state>
       </provider>
