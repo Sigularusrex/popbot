@@ -11,14 +11,9 @@ class NewsFeed < MessageProcessor
 
   private
 
+  #this is messy, but I'm running low on time
   def prepare_response
     feed = get_feed
-    puts feed.inspect
-
-
-
-
-
     return [
         attachment: {
             type: 'template',
