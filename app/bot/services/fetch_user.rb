@@ -11,24 +11,35 @@ class FetchUser
   end
 
   def call
-    get_sender_profile(@message.sender)
-    create_user(@message.sender['id'], get_sender_profile(@message.sender))
+    user = get_sender_profile(@message.sender['id'])
+    puts @message.sender["id"]
+    create_user(@message.sender['id'], user['first_name'], user['timezone'])
+  end
+
+  def message
+    @message
+  end
+
+  #Stub for testing Graph API
+  def get_facebook_user(id)
+    get_sender_profile(id)
+  end
+
+  def create_user(id, name, timezone)
+    User.where(:facebook_id => id).first_or_create(:first_name => name, :timezone => timezone)
   end
 
   private
-  def create_user(id, name)
-    User.where(:facebook_id => id).first_or_create(:first_name => name)
-  end
 
   def get_sender_profile(sender)
     request = HTTParty.get(
-        "https://graph.facebook.com/v2.6/#{sender['id']}",
+        "https://graph.facebook.com/v2.6/#{sender}",
         query: {
             access_token: ENV['ACCESS_TOKEN'],
-            fields: 'first_name'
+            fields: 'first_name, timezone'
         }
     )
 
-    request.parsed_response["first_name"]
+    request.parsed_response
   end
 end

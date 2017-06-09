@@ -1,8 +1,9 @@
 # MessageProcessor handles an incoming responce and parses to the required responder object
-class NewsFeed < MessageProcessor
+class GetStarted < PostbackProcessor
 
   def initialize(message, user)
     @message = message
+    @user = user
   end
 
   def call
@@ -13,11 +14,14 @@ class NewsFeed < MessageProcessor
 
   def prepare_response
     return [{
-         text: 'Enjoy your news feed'
+         text: "Hello, #{@user.first_name}"
+     },
+     {
+         text: 'I am a bot'
      }]
   end
 
-  #stub for expanding on responses
+  #stub for expanding on responses when reading messages (Not needed for postbacks)
   def accepted_responses
     #
   end

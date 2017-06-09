@@ -1,9 +1,8 @@
 # MessageProcessor handles an incoming responce and parses to the required responder object
-class GetStarted < PostbackProcessor
+class MyMusic < MessageProcessor
 
   def initialize(message, user)
     @message = message
-    @user = user
   end
 
   def call
@@ -14,19 +13,16 @@ class GetStarted < PostbackProcessor
 
   def prepare_response
     return [{
-         text: "Hello, #{@user.first_name}"
-     },
-     {
-         text: 'Hello, 2!'
-     }]
+                text: 'Sorry, am not connecting to Spotify yet'
+            }]
   end
 
-  #stub for expanding on responses when reading messages (Not needed for postbacks)
+  #stub for expanding on responses
   def accepted_responses
     #
   end
-end
 
+end
 
 
 

@@ -1,5 +1,5 @@
 # MessageProcessor handles an incoming responce and parses to the required responder object
-class ReadError < MessageProcessor
+class ReadError
 
   def initialize()
     #Handle error responses for future learning

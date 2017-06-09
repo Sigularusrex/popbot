@@ -11,6 +11,11 @@ Facebook::Messenger::Profile.set({
                                                      title: 'My Music',
                                                      type: 'postback',
                                                      payload: 'MyMusic'
+                                                 },
+                                                 {
+                                                     title: 'Show News Feed',
+                                                     type: 'postback',
+                                                     payload: 'NewsFeed'
                                                  }
                                              ]
                                          }

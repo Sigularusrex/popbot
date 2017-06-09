@@ -1,0 +1,53 @@
+<% @feed.each do |f| %>
+    <%= f[:title] %>
+    <br />
+<% end %>
+
+<%= @feed[0][:title] %>
+
+
+<%
+   require 'json'
+
+
+   require 'json'
+   my_object = { array: [1, 2, 3, { :sample => "hash"} ], :foo => "bar" }
+   puts my_object.inspect
+
+
+
+
+res = @feed.each.map{|f| {"title"=>f[:title], "default_action"=>{"type"=> 'web_url', "url"=>f[:link]}} }
+
+puts res.inspect
+    [
+           attachment: {
+                   type: 'template',
+                   payload: {
+                           template_type: 'list',
+                           top_element_style: 'compact',
+                           elements: [
+                                   {
+                                           title: 'postback',
+                                           subtitle: 'Get Started',
+                                           default_action:
+                                                   {
+                                                           type: 'web_url',
+                                                           url: 'http://www.google.com',
+                                                   }
+                                   },
+                                   {
+                                           title: 'postback',
+                                           subtitle: 'Get Started',
+                                           default_action:
+                                                   {
+                                                           type: 'web_url',
+                                                           url: 'http://www.google.com',
+                                                   }
+                                   }
+                           ]
+                   }
+           }
+   ]
+
+%>
