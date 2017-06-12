@@ -25,6 +25,11 @@ class GetStarted < PostbackProcessor
   def accepted_responses
     #
   end
+
+  # holds the logic for what template is to be used for output.
+  def accepted_parsers
+    #
+  end
 end
 
 
